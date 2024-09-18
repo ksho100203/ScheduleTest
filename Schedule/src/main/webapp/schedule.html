@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>勤怠管理システム</title>
+  <link rel="stylesheet" href="schedule.css">
+  <link rel="stylesheet" href="popup.css">
+
+</head>
+<body>
+  <!-- ヘッダー -->
+  <header>
+    <h1>勤怠管理</h1>
+  </header>
+
+  <!-- メインコンテンツ -->
+  <main>
+    <section>
+      <!-- 年月日の選択 -->
+      <select id="year"></select>
+      <label for="year">年</label>
+      
+      <select id="month"></select>
+      <label for="month">月</label>
+      
+      <button id="showCalendar">カレンダー表示</button>
+    </section>
+    
+    <!-- カレンダーの表示場所 -->
+    <section id="calendar"></section>
+  </main>
+
+  <footer>
+    <button id="prevMonth">先月</button>
+    <button id="nextMonth">来月</button>
+    <p>&copy; 2024 勤怠管理システム</p>
+  </footer>
+  
+  <script src="calendar.js"></script>
+  <script src="calendar-controls.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

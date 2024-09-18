@@ -1,0 +1,101 @@
+/* カレンダーの日付セル */
+.calendar-day {
+  text-align: center;
+  padding: 20px; /* セルのパディングを調整 */
+  border: 1px solid #ddd;
+  cursor: pointer;
+  font-size: 1.4em; /* フォントサイズを少し大きくする */
+}
+
+/* ボタンのスタイル */
+#prevMonth, #nextMonth, #showCalendar {
+  background-color: #6a0dad; /* ボタンの背景色（紫） */
+  color: white; /* ボタンの文字色（白） */
+  border: none;
+  padding: 12px 24px; /* ボタンのパディングを調整 */
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px; /* 角を丸くする */
+}
+
+#prevMonth:hover, #nextMonth:hover, #showCalendar:hover {
+  background-color: #5a0c9b; /* ボタンのホバー時の色 */
+}
+
+/* 年月のセレクトボックス */
+#year, #month {
+  background-color: white; /* セレクトボックスの背景色（白） */
+  border: 1px solid #ddd; /* セレクトボックスの枠線 */
+  padding: 7px; /* セレクトボックスのパディングを調整 */
+  border-radius: 5px; /* 角を丸くする */
+  cursor: pointer;
+}
+
+/* カレンダーのテーブル */
+table {
+  border-collapse: collapse;
+  width: auto; /* テーブルの幅を自動に設定 */
+  max-width: 1000px; /* 最大幅を1000pxに設定（必要に応じて調整） */
+  margin: 0 auto; /* 左右のマージンを自動にして中央に配置 */
+}
+
+/* カレンダーのヘッダー行 */
+th {
+  background-color: #6a0dad; /* ヘッダーの背景色（紫） */
+  color: white; /* ヘッダーの文字色（白） */
+  padding: 20px; /* パディングを調整 */
+  border: 1px solid #ddd;
+  font-size: 1.4em; /* フォントサイズを少し大きくする */
+}
+
+/* 土曜日のセル */
+.saturday {
+  color: blue;
+}
+
+/* 日曜日のセル */
+.sunday {
+  color: red;
+}
+
+/* カレンダーのセル */
+td {
+  text-align: center;
+  padding: 20px; /* セルのパディングを調整 */
+  border: 1px solid #ddd;
+}
+
+/* カレンダーの日付セルにホバー時のスタイルを追加 */
+.calendar-day:hover {
+  background-color: #f4f4f4; /* ホバー時の背景色 */
+}
+
+/* カレンダーを中央に寄せる */
+#calendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto; /* 上下にマージンを追加し、中央に寄せる */
+}
+
+/* 年月の選択セクションとボタン */
+section {
+  text-align: center; /* セクション内のテキストを中央に配置 */
+  margin-bottom: 20px; /* セクションの下にマージンを追加 */
+}
+
+header, footer {
+  text-align: center; /* ヘッダーとフッターのテキストを中央に配置 */
+  margin-bottom: 20px; /* ヘッダーとフッターの下にマージンを追加 */
+}
+
+/* 年月の選択ボックスとボタンを横並びにする */
+section select, section button {
+  margin: 5px; /* 各要素の間にマージンを追加 */
+}
+
+/* 年月の選択ボックスとボタンを中央に配置 */
+select, button {
+  display: inline-block;
+  vertical-align: middle; /* 中央揃えのための縦位置調整 */
+}

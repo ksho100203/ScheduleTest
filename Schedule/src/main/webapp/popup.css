@@ -1,0 +1,37 @@
+/* ポップアップのスタイル */
+#popup {
+  display: none; /* デフォルトでは非表示 */
+  position: fixed; /* ビューポートに対して固定位置 */
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px; /* 内部のパディングを調整 */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* ボックスシャドウを追加 */
+  z-index: 1000; /* 他の要素の上に表示 */
+  width: 600px; /* 幅を調整 */
+  height: auto; /* 高さを調整 */
+  max-height: 80vh; /* 高さの最大値を設定（ビューの80%） */
+  overflow-y: auto; /* 縦スクロールを有効にする */
+}
+
+/* ポップアップメニューの内容 */
+#popup-content {
+  background-color: #fff; /* 背景色 */
+  border: 1px solid #ddd; /* 枠線 */
+  padding: 20px; /* パディング */
+  border-radius: 10px; /* 角の丸み */
+  max-width: 100%; /* 最大幅を設定 */
+}
+
+/* 入力ボックスとラベルのスタイル */
+#popup-content label {
+  display: block; /* ラベルをブロック要素に */
+  margin-bottom: 5px; /* ラベルと入力ボックスの間にスペース */
+}
+
+#popup-content input {
+  display: block; /* 入力ボックスをブロック要素に */
+  margin-bottom: 10px; /* 入力ボックスと次の要素の間にスペース */
+  padding: 5px; /* 入力ボックスのパディング */
+  border: 1px solid #ddd; /* 入力ボックスの枠線 */
+  border-radius: 5px; /* 入力ボックスの角の丸み */
+}
